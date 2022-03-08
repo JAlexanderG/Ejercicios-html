@@ -12,19 +12,19 @@
 <body>
   <h1>Formulario de registro</h1>
   <form action="">
-    <label for="nombre">Nombre:</label>
-    <input type="text" name="nombre" id="nombre"><br><br>
+    <label for="nombres">Nombre:</label>
+    <input type="text" name="nombres" id="nombres"><br><br>
     <label for="apellidos">Apellidos:</label>
     <input type="text" name="apellidos" id="apellidos">
     <br><br>
     <p>Sexo:
-      <input type="radio" name="genero" id="hombre" value="h" required>
-      <label for="hombre">hombre</label>
-      <input type="radio" name="genero" id="mujer" value="m">
-      <label for="mujer">mujer</label>
+      <input type="radio" name="generos" id="hombres" value="h" required>
+      <label for="hombres">hombre</label>
+      <input type="radio" name="generos" id="mujeres" value="m">
+      <label for="mujeres">mujer</label>
     </p>
-    <label for="correo">Correo:</label>
-    <input type="text" name="correo" id="correo">
+    <label for="correos">Correo:</label>
+    <input type="text" name="correos" id="correos">
     <p>
       <label>
         <input type="checkbox" name="" id="">
@@ -39,6 +39,45 @@
     <input type="submit">
   </form>
   <hr>
+  <h2>Formulario de registro</h2>
+  <form action="" method="get">
+    <label for="nombre">Nombre: </label>
+    <input type="text" name="nombre" id="nombre" maxlength="50" placeholder="Ej. Alexander">
+    <br><br>
+    <label for="apellido">Apellido: </label>
+    <input type="text" name="apellido" id="apellido" maxlength="50" placeholder="Ej. García">
+    <p>Sexo:
+      <input type="radio" name="genero" id="hombre" required>
+      <label for="hombre">hombre</label>
+      <input type="radio" name="genero" id="mujer">
+      <label for="mujer">mujer</label>
+    </p>
+    <label for="correo">Correo: </label>
+    <input type="email" name="correo" id="correo" placeholder="Ej. MiCorreo@gmail.com">
+    <br><br>
+    <label for="ciudad-es">Población: </label>
+    <select name="ciudad" id="ciudad-es">
+      <option value="al">Alicante</option>
+      <option value="md" selected>Madrid</option>
+      <option value="sv">Sevilla</option>
+      <option value="vl">Valencia</option>
+    </select>
+    <br><br>
+    <label for="descripcion">Descripción</label>
+    <textarea name="descripcion" id="descripcion" cols="50" rows="5"></textarea>
+    <p>
+      <label>
+        <input type="checkbox" name="" id="">
+        Deseo recibir informacion sobre novedades y ofertas
+      </label><br><br>
+      <label>
+        <input type="checkbox" name="condicons" id="condicions" value="ok" required>
+        Declaro haber leído y aceptar las condiciones generales del programa
+      </label>
+    </p>
+
+    <input type="submit">
+  </form>
 </body>
 
 </html>
